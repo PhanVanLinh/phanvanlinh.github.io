@@ -1,4 +1,6 @@
---- layout: default ---
+--- 
+layout: default 
+---
 <!-- Navi -->
 {% for cat in site.all_categories %}{% if page.category == cat[0] %}<a href="/">Home</a>&nbsp;>&nbsp;<a href="{{cat[2]}}">{{cat[1]}}</a>&nbsp;>&nbsp;{% endif %}{% endfor %}
 <!-- Title -->
