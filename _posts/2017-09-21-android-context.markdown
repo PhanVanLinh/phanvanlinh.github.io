@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "read"
+category: "android"
 title:  "Android Context"
 tags: [android]
 ---
