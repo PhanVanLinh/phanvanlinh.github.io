@@ -15,8 +15,8 @@ url: ""
 # footer 
 description: "I know that what I'm doing looks stupid, but I'm a big boy and really want to do this."
 
-favo: "Learning and Sharing"
-descrpt: "descrpt"
+favo: "Learn and Share"
+descrpt: ""
 
 
 #
@@ -51,14 +51,14 @@ gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
 
 # Color
 # All css class, see: http://materializecss.com/color.html
-header-color: "indigo lighten-1"
-head-theme-color: "#5c6bc0"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
+header-color: "green"
+head-theme-color: "#ffffff"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
 
-footer-color: "indigo lighten-1"
+footer-color: "green darken-1"
 footer-button-color: "indigo lighten-2"
-footer-link-color: "red-text text-accent-1"
+footer-link-color: "white-text text-accent-1"
 
-share-button-color: "pink"
+share-button-color: "green"
 share-button-small-color: ""
 
 

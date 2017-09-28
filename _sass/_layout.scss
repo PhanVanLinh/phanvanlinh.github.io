@@ -229,8 +229,7 @@ a.reversefootnote {
  */
 
 .post-ribbon {
-    //background-color: rgba(15, 99, 17, 0.51);
-    background-color: rgba(68, 68, 68, 0.41);
+    background-image: url("../assets/bg.png");
     flex-shrink: 0;
     height: 40vh;
     width: 100%;
@@ -275,11 +274,11 @@ a.reversefootnote {
 .post-title {
     font-family: $head-font;
     color: rgba(0, 0, 0, 0.76);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 2.1rem 0 1.68rem;
 
     @media #{$medium-and-down} {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
