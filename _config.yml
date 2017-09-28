@@ -1,68 +1,67 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
+author: Phan Van Linh
+email: example@email.com
+twitter_username: twitter
+github_username:  github
+googleplus_username: google
+
+head-title: Phan Van Linh
+title: Phan Van Linh
+
+baseurl: ""    # the subpath of your site, "/blog"
+url: ""
+
+# footer 
+description: "I know that what I'm doing looks stupid, but I'm a big boy and really want to do this."
+
+favo: "Spring dream with the clouds scattered, fly by water"
+descrpt: "descrpt"
+
+
+#
 # Build settings
+#
+
+#exclude: [vendor]
+
 markdown: kramdown
-highlighter: pygments
-permalink: /posts/:title.html
-excerpt_separator: "<!-- more -->"
+highlighter: rouge
 
-theme: minima
-plugins:
-  - jekyll-feed
+kramdown:
+  input: GFM
+  hard_wrap: false
+  highlight: true
+  auto_ids:  true
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-all_categories: [
-["android", "Android","/posts/android.html"],
-["other", "Other","/posts/other.html"],
-["about", "About","/about.html"]
-]
+sass:
+  style: compressed
 
-title_home : "Home"
-title_category: "Category"
-title_recent_post: "Recent Post"
-title_list: "List"
+permalink: /posts/:categories/:title.html
 
-paginate: 8
-paginate_path: "posts/page:num"
-timezone: America/Los_Angeles
+paginate: 7
+#paginate_path: 'page/:num'
 
-collections:
-  docs:
-    output: true
+gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
 
-gems:
- - jekyll-paginate
+
+#
+# Custom
+#
+
+# Color
+# All css class, see: http://materializecss.com/color.html
+header-color: "indigo lighten-1"
+head-theme-color: "#5c6bc0"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
+
+footer-color: "indigo lighten-1"
+footer-button-color: "indigo lighten-2"
+footer-link-color: "red-text text-accent-1"
+
+share-button-color: "pink"
+share-button-small-color: ""
+
+
+##
+#excerpt_separator: <!-- excerpt_end -->       # for post.excerpt
+

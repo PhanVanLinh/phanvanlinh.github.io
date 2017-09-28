@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "android"
-title:  "String, StringBuilder, StringBuffer"
+title:  "Android Studio Tips"
 tags: [java]
 ---
 

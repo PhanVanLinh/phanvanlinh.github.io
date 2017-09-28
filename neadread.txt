@@ -18,6 +18,6 @@ Xong chạy lệnh dưới để setup
 bundle install
 
 Chạy lệnh ni để build
-jekyll sehve --watch
+jekyll s --watch
 
 Build xong thì nó ra 1 cái local (ví dụ 127.0.0.1:40), chạy lên nữa là xong

@@ -1,41 +1,45 @@
---- 
-layout: default 
 ---
-<!-- Navi -->
-{% for cat in site.all_categories %}{% if page.category == cat[0] %}<a href="/">Home</a>&nbsp;>&nbsp;<a href="{{cat[2]}}">{{cat[1]}}</a>&nbsp;>&nbsp;{% endif %}{% endfor %}
-<!-- Title -->
-<h2>{{ page.title }}</h2> {% if page.tags.size > 0%}<b>Tags: </b>{% for tag in page.tags %}{% if tag != "" %}<a href="/tags.html#{{ tag }}"><i>{{ tag }}</i></a>{% if forloop.index != page.tags.size %}, {% endif %}{% endif %}{% endfor %}{% endif %}
-<div class="post-date">
-	<span class="glyphicon glyphicon-time"></span> {{ page.date | date:"%Y-%m-%d" }}
-</div>
-<br/>
+layout: default
+---
 
-<!-- content -->
-<div style="text-indent:2em;">
-	{{ content }}
-</div>
+<div class="post-ribbon"></div>
 
-<!-- next and previous -->
-<div style="margin-top:60px; margin-bottom:10px">
-	{%if page.previous%}
-	<span class="next">
-    Previous Chapter：
-    <a href="{{page.previous.url}}">
-      {{page.previous.title}}
-    </a>
-  </span> {%endif%} {%if page.next%}
-	<div style="float:right">
-		<span class="prev">
-    The next chapter：
-    <a href="{{page.next.url}}">
-      {{page.next.title}}
-    </a>
-  </span>
-	</div>
-	{%endif%}
-</div>
-<hr>
-<!-- Blog Comments -->
-<div class="media">
-	{% include comment.html %}
+<div class="container post-container">
+  <div class="post-page card-panel z-depth-2">
+  <div class="post-section">
+
+    <p class="grey-text">
+      <i class="mdi mdi-calendar"></i>&nbsp;
+      {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% else %}unknown{% endif %}
+      &nbsp;&nbsp;<i class="mdi mdi-account-circle"></i>&nbsp;
+      {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
+      &nbsp;&nbsp;<i class="mdi mdi-label"></i>&nbsp;
+      {% if page.categories %}<span class="capitalize">{{ page.categories }}</span>{% else %}unknown{% endif %}
+      &emsp;<i class="mdi mdi-refresh"></i>&nbsp;UPDATE: {% if page.update %}{{ page.update | date: "%b %-d, %Y" }}{% else %}{{ page.last_modified_at | date: "%b %-d, %Y" }}{% endif %}
+    </p>
+
+    <div class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+
+      {% if page.tags %}
+        <i class="post-tag mdi mdi-tag-multiple waves-effect waves-light"></i>
+        {% for tag in page.tags %}
+        <div class="chip">{{ tag }}</div>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <article class="post-content">
+      {{ content | toc_generate }}
+    </article>
+
+    {% include share.html %}
+
+  </div>
+  </div>
+
+  {% if page.mathjax %}
+    {% include mathjax_support.html %}
+  {% endif %}
+
 </div>
