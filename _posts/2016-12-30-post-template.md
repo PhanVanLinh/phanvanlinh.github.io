@@ -6,6 +6,7 @@ categories: "readme"
 tags: [jekyll, material design]
 author: Lambda
 comment: false
+excerpt: "principle"
 ---
 
 This is a documentation of posts.

@@ -3,6 +3,7 @@ layout: post
 category: "android"
 title:  "SOLID principle"
 tags: [java]
+excerpt: "principle"
 ---
 
 ```

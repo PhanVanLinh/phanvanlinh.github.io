@@ -15,18 +15,9 @@ layout: default
       <li class="card-panel hoverable">
         <span class="grey-text right">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
-        <div id="{{ post.id | remove: '%' | replace: '/', '_' }}" class="modal modal-fixed-footer">
-          <div class="modal-content">
-            <h4>{{ post.title }}</h4>
-            <p>{{ post.excerpt }}</p>
-          </div>
-          <div class="modal-footer">
-            <a href="{{ post.url | prepend: site.baseurl }}" class="waves-effect btn-flat grey-text text-darken-4 right">read more</a>
-            <a class="modal-action modal-close waves-effect btn-flat grey-text text-darken-4 left">close</a>
-          </div>
-        </div>
+        <p>{{ post.excerpt }}</p>
       </li>
+
     {% endfor %}
   </ul>
 

@@ -3,6 +3,7 @@ layout: post
 category: "read"
 title:  "Serializable and Parcelable?"
 tags: [android,java]
+excerpt: "compare"
 ---
 
 ### What is the different between Serializable and Parcelable ?

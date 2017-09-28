@@ -3,6 +3,7 @@ layout: post
 category: "android"
 title:  "Android Context"
 tags: [android]
+excerpt: "principle"
 ---
 ###There are 2 type of Context?
 Application Context  
