@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "read"
+category: "java"
 title:  "Serializable and Parcelable?"
 tags: [android,java]
 excerpt: "compare"
