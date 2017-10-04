@@ -12,6 +12,7 @@ http://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias
 - Scroll down a litle bit then you will see some alias
 - Add a new `alias`
 - Run `source ~/.bashrc`
+
 ### Make link to directory
 - Open gedit `~/.bashrc`
 - Add an export (for example: `export folderA=~/FolderTest/FolderA/`)

@@ -18,7 +18,7 @@ Verbose #BBBBBB
 Warning #FF9800
 ```
 ### Search for command
-CMD + Shift + a (Windows/Linux Ctrl + shift + a)
+CMD + Shift + a (Windows/Linux Ctrl + shift + a)  
 Using: When you forget a command, you want to search it 
 ### Select copy/pastes (manage clipboard)
 CMD + Shift + V (Windows/Linux Ctrl + Shift + V)
