@@ -6,5 +6,7 @@ tags: [android]
 excerpt: "strangely"
 ---
 
-### Get an OAuth 2.0 Client ID
-### Create Project
+### WebView
+***Load html string content***
+`webView.loadDataWithBaseURL(null, "<html><body><pre>line 1\nline 2</pre></body></html>", "text/html", "UTF-8", null);`  
+Note: we should use `loadDataWithBaseURL` instead because `loadData` don't handle next line `(\n) `
