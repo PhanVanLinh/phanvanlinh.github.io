@@ -5,7 +5,7 @@ cái category.html là dùng cho mấy trang category
 cái page.html là dùng cho mấy trang cơ bản (như trang about)
 cái post.html là dùng cho trang post
 
-
+cai _config.yml la noi config cac constant cua web
 
 
 Cái _site là cái mà project tự gen ra, có thể xóa được, y như cái build trong android
