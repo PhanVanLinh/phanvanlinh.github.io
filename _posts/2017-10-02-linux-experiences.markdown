@@ -8,7 +8,7 @@ excerpt: "principle"
 
 ### Make alias
 http://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias
-- Open gedit `~/.bashrc`
+- Open `gedit ~/.bashrc`
 - Scroll down a litle bit then you will see some alias
 - Add a new `alias`
 - Run `source ~/.bashrc`
