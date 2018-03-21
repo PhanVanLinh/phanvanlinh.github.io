@@ -1,8 +1,8 @@
 ---
 layout: post
-category: "optimization"
+category: "android"
 title:  "Reduce APK size"
-tags: [android]
+tags: [android, optimization]
 excerpt: "Reduce APK size"
 ---
 

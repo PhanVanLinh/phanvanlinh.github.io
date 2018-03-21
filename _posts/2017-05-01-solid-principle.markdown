@@ -1,8 +1,8 @@
 ---
 layout: post
-category: "android"
+category: "principle"
 title:  "SOLID principle"
-tags: [java]
+tags: [principle]
 excerpt: "principle"
 ---
 

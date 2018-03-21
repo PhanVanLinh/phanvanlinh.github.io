@@ -1,9 +1,9 @@
 ---
 layout: post
-category: "android"
+category: "operation"
 title:  "Linux Experiences"
 tags: [linux]
-excerpt: "principle"
+excerpt: "operation"
 ---
 
 ### Make alias

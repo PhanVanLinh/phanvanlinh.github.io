@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "designpattern"
+category: "design pattern"
 title:  "Singleton"
 tags: [java]
 excerpt: ""

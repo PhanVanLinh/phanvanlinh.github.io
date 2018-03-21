@@ -12,12 +12,11 @@ title: Phan Van Linh
 baseurl: ""    # the subpath of your site, "/blog"
 url: ""
 
-# footer 
-description: "What would you do today if there is no more tommorrow"
-
-favo: "Learn and Share"
+favo: "The knowledge that I learned"
 descrpt: ""
 
+# footer 
+description: "What would you do today if there is no more tommorrow"
 
 #
 # Build settings
