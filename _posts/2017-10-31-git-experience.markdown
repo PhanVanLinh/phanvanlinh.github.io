@@ -10,14 +10,15 @@ excerpt: "git"
 ### Store password
 >Password will stored forever
 
-Step 1) `git config credential.helper store` 
-Step 2) Use `git pull` or `git push ...` 
-Step 3) Enter username and password
-Step 4) Username and password is already stored 
+Step 1) `git config credential.helper store`  
+Step 2) Use `git pull` or `git push ...`  
+Step 3) Enter username and password  
+Step 4) Username and password is already stored   
 
-**Note**
-To update, redo step from 1 -> 4
-**Reference**
+**Note**  
+To update, redo step from 1 -> 4  
+
+**Reference**  
 https://stackoverflow.com/a/35942890/5381331
 ### Cache password
 > Password will store till it's timeout. However, it will reset after we reset computer
